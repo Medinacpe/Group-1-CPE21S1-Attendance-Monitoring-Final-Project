@@ -10,9 +10,9 @@ bool validDate(string date){
             return false;
         }
     }
-    int y = atoi(date.substr(0, 4).c_str());
-    int m = atoi(date.substr(5, 2).c_str());
-    int d = atoi(date.substr(8, 2).c_str());
+    int year = atoi(date.substr(0, 4).c_str());
+    int month = atoi(date.substr(5, 2).c_str());
+    int day = atoi(date.substr(8, 2).c_str());
     int days[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
     if(y < 1900 || m < 1 || m > 12){
         return false;
