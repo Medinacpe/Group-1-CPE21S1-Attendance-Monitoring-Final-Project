@@ -1,3 +1,5 @@
+// System Header file (keep adding functions here)
+
 #ifndef SYSTEM_H
 #define SYSTEM_H
 
@@ -12,6 +14,7 @@
 #include <cstdio>
 using namespace std;
 
+// doubly linked; list student per node having id, name, and prev as well as next values
 struct Student {
     int id;
     string name;
@@ -19,6 +22,7 @@ struct Student {
     Student* next;
 };
 
+// one attendance entry linked to the student by ID where 2 = present, 1 = late, & 0 = absent.
 struct Record {
     int id;
     string date;
@@ -28,20 +32,27 @@ struct Record {
     Record* next;
 };
 
+// one waiting student in attendance queue. Student points to existing student, next points to next queue node
 struct QueueNode {
     Student* student;
     QueueNode* next;
 };
 
+// needed so that we declare shared variables without another copy. Actual definitions are in main.cpp 
 extern Student* head;
 extern Student* tail;
+// first and last attendance recs
 extern Record* firstRecord;
 extern Record* lastRecord;
+// first and last nodes in attendance queue
 extern QueueNode* front;
 extern QueueNode* rear;
+// next student ID to assign and the current number of students
 extern int nextId;
 extern int studentCount;
 
+
+// FUHCTION DECLARATIONS (function definitions are in .cpp files)
 string trim(string text);
 string nameKey(string text);
 bool parseInt(string text, int& value);
@@ -76,6 +87,7 @@ void historyMenu();
 void searchMenu();
 void groupStudents();
 void clearData();
+// benchmark function to run separate test and write mmeasureents to CSV
 void runBenchmark();
 
 #endif
