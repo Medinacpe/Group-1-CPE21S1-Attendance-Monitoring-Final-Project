@@ -31,6 +31,13 @@ g++ -std=c++11 -Wall -Wextra -pedantic main.cpp students.cpp attendance.cpp hist
 
 The program is easily compiled and built into an .exe file by clicking `01_BuildToEXE.bat`.
 
+### Requirements
+- Windows with g++ (MinGW-w64) supporting C++11
+
+### Troubleshooting
+**`undefined reference to findId / addStudent / ...`**
+Only `main.cpp` was compiled. Compile all six `.cpp` files together or run `01_BuildToEXE.bat`.
+
 
 
 ## Example Use-Case (Demonstration):
@@ -95,6 +102,14 @@ g++ -std=c++11 -O2 main.cpp students.cpp attendance.cpp history.cpp search.cpp g
 ```
 
 The generated benchmarking file, `benchmark_results.csv` is created in the same folder where you can run it, and it tests n = 100, 1,000, 10,000, and 100,000 of fictional students with each size using five runs. Additionally, linear search would traverse the whole linked list where binary search would use an already sorted array. Furthermore, merge sort is would be timed in a seperate manner where it has an alphabetical input that is reversed and is reset before each of the different n runs.
+
+### Benchmark results
+| Input Size (n) | Linear Search (ms) | Binary Search (ms) | Merge Sort (ms) |
+|---|---|---|---|
+| 100 | 0.0082336 | 0.0002454 | 0.01254 |
+| 1,000 | 0.1029548 | 0.0005564 | 0.2766 |
+| 10,000 | 1.0877778 | 0.0005324 | 3.42185 |
+| 100,000 | 12.9251674 | 0.0006898 | 50.82048 |
 
 
 
