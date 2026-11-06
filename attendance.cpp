@@ -14,13 +14,14 @@ bool validDate(string date){
     int month = atoi(date.substr(5, 2).c_str());
     int day = atoi(date.substr(8, 2).c_str());
     int days[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
-    if(y < 1900 || m < 1 || m > 12){
-        return false;
+
+    if(year < 1900 || month < 1 || month > 12){
+    return false;
     }
-    if(y % 400 == 0 || (y % 4 == 0 && y % 100 != 0)){
+    if(year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)){
         days[1] = 29;
     }
-    return d >= 1 && d <= days[m - 1];
+    return day >= 1 && day <= days[month - 1];
 }
 
 bool validTime(string time){
