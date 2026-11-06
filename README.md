@@ -149,9 +149,5 @@ Compiled using C++11 and developed within VS Code among 6 group members with war
 ---
 ![Team photo](IMAGE/Screenshot%202026-11-06%20232108.png)
 
-* Alvarez, Joshua Caleb P 
-* Baltazar, Kenji
-* Formilleza, Huone Anthony
-* Garcia, Vince Joseph R.
-* Medina, Jomz Ryle E.
+
 * Regala, Joaquin Luiz B.
