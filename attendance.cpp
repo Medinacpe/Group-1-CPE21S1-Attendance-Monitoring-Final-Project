@@ -32,7 +32,9 @@ bool validTime(string time){
             return false;
         }
     }
-    return atoi(time.substr(0, 2).c_str()) < 24 && atoi(time.substr(3, 2).c_str()) < 60;
+    int hour = atoi(time.substr(0, 2).c_str());
+    int minute = atoi(time.substr(3, 2).c_str());
+    return hour < 24 && minute < 60;
 }
 
 void enqueue(Student* student){
