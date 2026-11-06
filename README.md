@@ -145,7 +145,6 @@ Compiled using C++11 and developed within VS Code among 6 group members with war
 * Medina, Jomz Ryle E.
 * Regala, Joaquin Luiz B.
 
-* ## Team Members - CPE21S1 / Group 1
 ---
 ![Team photo](IMAGE/Screenshot%202026-11-06%20232108.png)
 
