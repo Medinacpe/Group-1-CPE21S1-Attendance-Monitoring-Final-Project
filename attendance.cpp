@@ -97,6 +97,8 @@ void checkAttendance(){
     }while(!validTime(time));
     Student** list = sortedStudents();
     int skipped = 0;
+    
+    //Only add the student's that do not have attendance record for just this session in time
     for(int i = 0; i < studentCount; i++){
         if(findRecord(list[i]->id, date, time) == NULL){
             enqueue(list[i]);
