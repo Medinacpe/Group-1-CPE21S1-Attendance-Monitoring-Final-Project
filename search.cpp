@@ -112,3 +112,4 @@ void runBenchmark() {
     if (!output) cout << "Benchmark output could not be saved.\n";
     else cout << "Saved benchmark_results.csv. Check value: " << found << '\n';
 }
+
