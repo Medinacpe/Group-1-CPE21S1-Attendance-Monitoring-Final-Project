@@ -123,10 +123,32 @@ A single enqueue/dequeue is O(1) where processing n queued students is O(n). Mer
 
 Compiled using C++11 and developed within VS Code among 6 group members with warning flags. Scripted checks have covered import, duplicate rejection, invalid menu/status/date/time input, alphabetical queue order, stopping/resuming a session, exact name search, history correction, rename persistence, quoted CSV round-trips, both grouping modes, student/history deletion, restart, malformed-file protection, and end-of-input handling. The benchmark was run separately.
 
+## Screenshots
+
+### Main menu and attendance checking
+![Attendance checking](IMAGE/Screenshot%202026-11-06%20231623.png)
+
+### Viewing a student's attendance history
+![History](IMAGE/Screenshot%202026-11-06%20231640.png)
+
+### Correcting an attendance entry
+![Correction](IMAGE/Screenshot%202026-11-06%20231646.png)
+
 
 
 ## Team Members - CPE21S1 / Group 1
 ---
+* Alvarez, Joshua Caleb P 
+* Baltazar, Kenji
+* Formilleza, Huone Anthony
+* Garcia, Vince Joseph R.
+* Medina, Jomz Ryle E.
+* Regala, Joaquin Luiz B.
+
+* ## Team Members - CPE21S1 / Group 1
+---
+![Team photo](IMAGE/Screenshot%202026-11-06%20232108.png)
+
 * Alvarez, Joshua Caleb P 
 * Baltazar, Kenji
 * Formilleza, Huone Anthony
